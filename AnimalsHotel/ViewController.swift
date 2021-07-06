@@ -7,9 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    class Animal {
+        class Animal {
         var name = ""
         var description: String {
             "Animal"
@@ -90,19 +88,16 @@ class ViewController: UIViewController {
     
     for pet in pets {
         if pet is Dog {
-            dogCount +=1
+            dogCount += 1
         } else if pet is Cat {
-            catCount +=1
+            catCount += 1
         } else if pet is Bird {
-            birdCount +=1
+            birdCount += 1
         }
+    
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    print("There are \(dogCount) dogs, \(catCount) cats, \(birdCount) birds")
+        print("There are \(dogCount) dogs, \(catCount) cats, \(birdCount) birds")
     
     func walk(with dog: Dog) {
         print("Walking \(dog.name")
@@ -125,6 +120,4 @@ class ViewController: UIViewController {
         cleanCage(for: bird)
         }
     }
-
-}
 
